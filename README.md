@@ -29,3 +29,13 @@ Given an input handwriting sample A, after PointNet produces its diagnostic pred
 To interpret the black-box behavior of PointNet around input A, a set of perturbed samples is generated within the local neighborhood of A. These perturbed samples are then used to train a simple, interpretable linear surrogate model that approximates PointNet's decision boundary near A.
 
 The perturbation sample size parameter controls how many such locally generated samples are created for surrogate-model training.
+
+## Perturbation-Based Explanation Visualization
+
+When the “Perturbation Explanation” button is clicked, the system displays the explanation results generated for the black-box model in both 3D point-cloud form and 2D image form.
+
+Red segments indicate regions of the handwriting that the model associates with Parkinson’s disease–like patterns.
+
+Blue segments indicate regions that the model considers more consistent with healthy control behavior.
+
+These visualizations provide an intuitive interpretation of how different local handwriting segments contribute to the model’s diagnostic decision.
